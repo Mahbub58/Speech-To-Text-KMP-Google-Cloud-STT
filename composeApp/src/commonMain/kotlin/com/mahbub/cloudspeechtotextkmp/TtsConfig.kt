@@ -1,4 +1,3 @@
 package com.mahbub.cloudspeechtotextkmp
 
-expect fun getGoogleTtsApiKey(): String?
-
+fun getGoogleTtsApiKey(): String? = GOOGLE_TTS_API_KEY.ifBlank { null }
